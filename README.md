@@ -1,12 +1,6 @@
 # How to share data with GSQ
 
-You can share files with GSQ over the internet. This is good if you have large files, or a lot of files, that you need to share. 
-
-<p align="center">
-<img src="model/profile-template.svg" width="700px"><br>
-Figure 1: Add title of graphic</p>
-
-Add additional text as required to explain the profile.
+You can share files with GSQ over the internet. This is good if you have large files, or a lot of files, that you need to share.  
 
 ## Copy files from your S3 to GSQ's S3
 
@@ -15,7 +9,7 @@ We use Amazon's AWS platform for cloud data storage. We store data objects (file
 ### Step 1: Get GSQ's 12 digit AWS account number (the *destination*)
 
 <p align="center">
-<img src="model/profile-template.svg" width="700px"><br>
+<img src="model/get-acct-num.png" width="600px"><br>
 Figure 1: Add title of graphic</p>
 
 1. Sign into the GSQ account for the *destination* S3 bucket.
