@@ -2,9 +2,9 @@
 
 Customers can share large files, or a lot of files, with GSQ through the following methods. Click the link to read the userguide for GSQ staff.
 
-* [S3 to S3 data transfer](gsq-userguides/s3-to-s3-gsq-userguide)
-* [Azure Storage to S3 data transfer](gsq-userguides/azure-storage-to-s3-gsq-userguide)
-* [AWS Snowball data transfer](gsq-userguides/snowball-gsq-userguide)
+* [S3 to S3 data transfer](gsq-userguides/s3-to-s3-gsq-userguide.md)
+* [Azure Storage to S3 data transfer](gsq-userguides/azure-storage-to-s3-gsq-userguide.md)
+* [AWS Snowball data transfer](gsq-userguides/snowball-gsq-userguide.md)
 
 ## Licence
 
