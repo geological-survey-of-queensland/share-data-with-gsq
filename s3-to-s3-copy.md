@@ -6,7 +6,7 @@ You can share files in your AWS S3 buckets into GSQ's AWS S3 buckets through AWS
 
 1. Send an email to GSQOpenData@dnrme.qld.gov.au with the following information:  
     a. What the data is (e.g. airborne survey flown for company X).  
-    b. The contact details of your contact person.
+    b. The contact details of your contact person.  
     c. What the data relates to (e.g. Permit EPM12345, Company Report CR6789).  
     d. Your *source* bucket region (e.g. ap-southeast-2).  
     e. Your *source* bucket name.  
