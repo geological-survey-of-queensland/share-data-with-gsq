@@ -9,8 +9,8 @@ We use Amazon's AWS platform for cloud data storage. We store data objects (file
 ### Step 1: Get GSQ's 12 digit AWS account number (the *destination*)
 
 <p align="center">
-<img src="model/get-acct-num.png" width="600px"><br>
-Figure 1: Add title of graphic</p>
+<img src="model/get-acct-num.png" width="700px"><br>
+Figure 1: How to get the GSQ AWS Account number</p>
 
 1. Sign into the GSQ account for the *destination* S3 bucket.
 1. Click **Support** -> **Support Center** and copy the 12 digit AWS account number. This number is the Amazon Resource Name (ARN) of the destination account.
