@@ -23,7 +23,7 @@ By default, an S3 object is owned by the account that uploaded the object. That'
 
 1. Sign in to *source* AWS account.  
 2. Attach the S3 bucket policy sent to you by GSQ to the *source* bucket (see [how-to](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html)).  
-3. The bucket policy is as per the below code. However, the policy we send to you has the value of **Principal** set to GSQ's ARN.
+3. The bucket policy is as per the below code. However, the policy we send to you has the value of **Principal** set to GSQ's ARN and will have your source bucket names listed..
 
 ```json
 {
@@ -47,37 +47,6 @@ By default, an S3 object is owned by the account that uploaded the object. That'
     ]
 }
 ```
-
-### Step 3: Attach a policy to the *destination* GSQ Admin IAM role
-
-Attaching this policy in the GSQ account allows users in the GSQ Admin Role to copy objects from the *source* bucket to the *destination* bucket.  
-
-1. Sign in to *destination* GSQ AWS account and change Role to the GSQ Admin Role.  
-2. Create the following policy in the IAM Concolse (see [how-to](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html)).  
-3. Change the value of the **SOURCE_BUCKET_NAME** and **DESTINATION_BUCKET_NAME**.
-
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "s3:ListBucket",
-                "s3:GetObject"
-            ],
-            "Resource": [
-                "arn:aws:s3:::SOURCE_BUCKET_NAME",
-                "arn:aws:s3:::SOURCE_BUCKET_NAME/*"
-            ]
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "s3:ListBucket",
-                "s3:PutObject",
-                "s3:PutObjectAcl"
-            ],
 
 ## Important
 
