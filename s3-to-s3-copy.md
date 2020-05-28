@@ -1,4 +1,4 @@
-# How to share data with GSQ
+# How to share data with GSQ using S3 to S3 sync
 
 You can share files in your AWS S3 buckets into GSQ's AWS S3 buckets through AWS sync. This is good if you have large files, or a lot of files, that you need to share with GSQ.  
 
