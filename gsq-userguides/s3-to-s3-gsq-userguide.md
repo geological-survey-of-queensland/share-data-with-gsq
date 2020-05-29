@@ -97,7 +97,15 @@ Attaching this policy in the GSQ account allows users in the GSQ Admin Role to c
 aws s3 sync s3://SOURCE_BUCKET_NAME s3://DESTINATION_BUCKET_NAME
 ```
 
-### Step 4a: How to include or exclude folders or files
+### Step 4a: How to copy to a specific destination folder
+
+The example below shows how to sync to a specific folder in the destination S3.
+
+```cmd
+aws s3 sync s3://SOURCE_BUCKET_NAME s3://DESTINATION_BUCKET_NAME/FOLDER_PATH/SUB_FOLDER_PATH
+```
+
+### Step 4b: How to include or exclude folders or files
 
 The example below shows how we can include a specific file. All other files are excluded. You can pass an --include or --exclude argument multiple times. When there are multiple filters, the rule is the filters that appear later in the command take precedence over filters that appear earlier in the command. For instance, if the order was `--include "*.txt" --exclude "*"` then all files would be excluded.
 
