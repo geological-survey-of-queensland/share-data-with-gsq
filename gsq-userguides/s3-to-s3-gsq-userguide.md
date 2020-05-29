@@ -56,6 +56,8 @@ Attaching this policy in the GSQ account allows users in the GSQ Admin Role to c
 1. Sign in to *destination* GSQ AWS account and change Role to the GSQ Admin Role.  
 2. Create the following policy in the IAM Concolse (see [how-to](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html)).  
 3. Change the value of the **SOURCE_BUCKET_NAME** and **DESTINATION_BUCKET_NAME**.
+4. Name the policy **Temp_S3_Sync_ddmmyyyy**.
+5. Enter in the description **Delete this policy on ddmmyyyy** where the date is today + 5 business days.
 
 ```json
 {
@@ -135,10 +137,14 @@ Add the source and destination region names as per below.
 aws s3 sync s3://SOURCE-BUCKET-NAME s3://DESTINATION-BUCKET-NAME --source-region SOURCE-REGION-NAME --region DESTINATION-REGION-NAME
 ```
 
-### More help with the s3 sync command
+### Step 4c: More help with the s3 sync command
 
 * Simple guide: https://docs.amazonaws.cn/en_us/cli/latest/userguide/cli-services-s3-commands.html
 * Detailed guide: https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html
+
+## Step 5: Delete the IAM policy
+
+1. Delete the IAM policy created in Step 3.
 
 ## Important
 
