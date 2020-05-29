@@ -94,28 +94,43 @@ Attaching this policy in the GSQ account allows users in the GSQ Admin Role to c
 2. Copy S3 buckets from the *source* to *destination* using the following AWS CLI command:
 
 ```cmd
-aws s3 sync s3://awsexamplesourcebucket s3://awsexampledestinationbucket
+aws s3 sync s3://SOURCE_BUCKET_NAME s3://DESTINATION_BUCKET_NAME
 ```
 
-### Step 4a: How to include or exclude files
+### Step 4a: How to include or exclude folders or files
 
-* Content to come
-
-### Step 4b: How to use copy contents of folders
-
-* Content to come
+The example below shows how we can include a specific file. All other files are excluded. You can pass an --include or --exclude argument multiple times. When there are multiple filters, the rule is the filters that appear later in the command take precedence over filters that appear earlier in the command. For instance, if the order was `--include "*.txt" --exclude "*"` then all files would be excluded.
 
 ```cmd
-
+aws s3 sync s3://SOURCE_BUCKET_NAME s3://DESTINATION_BUCKET_NAME --exclude "*" --include "myfile.txt"
 ```
 
-### Step 4c: How to copy across regions
+Syncing only files of type LAS
+
+```cmd
+aws s3 sync s3://SOURCE_BUCKET_NAME s3://DESTINATION_BUCKET_NAME --exclude "*" --include "*.las"
+```
+
+The example below shows how we can exclude the S3 folders SEISMIC and GEOCHEMISTRY. All other folders are copied.
+
+```cmd
+aws s3 sync s3://SOURCE_BUCKET_NAME s3://DESTINATION_BUCKET_NAME --exclude "SEISMIC/*" --exclude "GEOCHEMISTRY/*"
+```
+
+See the full list of filters here: https://docs.aws.amazon.com/cli/latest/reference/s3/index.html#use-of-exclude-and-include-filters
+
+### Step 4b: How to copy across regions
 
 Add the source and destination region names as per below.
 
 ```cmd
 aws s3 sync s3://SOURCE-BUCKET-NAME s3://DESTINATION-BUCKET-NAME --source-region SOURCE-REGION-NAME --region DESTINATION-REGION-NAME
 ```
+
+### More help with the s3 sync command
+
+* Simple guide: https://docs.amazonaws.cn/en_us/cli/latest/userguide/cli-services-s3-commands.html
+* Detailed guide: https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html
 
 ## Important
 
