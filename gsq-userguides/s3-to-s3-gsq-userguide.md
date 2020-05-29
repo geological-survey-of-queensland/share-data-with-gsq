@@ -97,11 +97,11 @@ Attaching this policy in the GSQ account allows users in the GSQ Admin Role to c
 aws s3 sync s3://awsexamplesourcebucket s3://awsexampledestinationbucket
 ```
 
-### Step 4b: How to include or exclude files
+### Step 4a: How to include or exclude files
 
 * Content to come
 
-### Step 4a: How to use copy contents of folders
+### Step 4b: How to use copy contents of folders
 
 * Content to come
 
@@ -109,9 +109,9 @@ aws s3 sync s3://awsexamplesourcebucket s3://awsexampledestinationbucket
 
 ```
 
-### Step 4a: How to copy across regions
+### Step 4c: How to copy across regions
 
-* Content to come
+Add the source and destination region names as per below.
 
 ```cmd
 aws s3 sync s3://SOURCE-BUCKET-NAME s3://DESTINATION-BUCKET-NAME --source-region SOURCE-REGION-NAME --region DESTINATION-REGION-NAME
