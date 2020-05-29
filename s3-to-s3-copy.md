@@ -5,15 +5,15 @@ You can share files in your AWS S3 buckets into GSQ's AWS S3 buckets through AWS
 ## Step1: Send an email to GSQ with your request
 
 1. Send an email to GSQOpenData@dnrme.qld.gov.au with the following information:  
-    a. What the data is (e.g. airborne survey flown for company X).  
-    b. The contact details of your contact person.  
-    c. What the data relates to (e.g. Permit EPM12345, Company Report CR6789).  
+    a.  The contact details of your contact person. 
+    b.  What the data is (e.g. airborne survey flown for company, data relating to a lodged survey, etc.).
+    c. What the data relates to (e.g. Permit EPM12345, Company Report CR6789 or Survey PID XXXX).  
     d. Your *source* bucket region (e.g. ap-southeast-2).  
     e. Your *source* bucket name.  
     f. The name of S3 folder that has the data you want to transfer.  
       * We prefer transferring all contents of an S3 folder rather than transferring individual files by filename.  
       * However, we can transfer individual files if you are unable to create an S3 folder.    
-2. QSQ will then send you a bucket policy to add to your S3 bucket.  
+2. GSQ will then send you a bucket policy to add to your S3 bucket.  
 
 ## Step 2: Attach a policy to your *source* S3 bucket
 
