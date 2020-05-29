@@ -1,4 +1,4 @@
-# How to share help customers share data with GSQ
+# How to help customers share data with GSQ
 
 Customers can share large files, or a lot of files, with GSQ through the following methods. Click the link to read the userguide for GSQ staff.
 
