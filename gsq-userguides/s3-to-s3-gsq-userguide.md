@@ -54,7 +54,7 @@ By default, an S3 object is owned by the account that uploaded the object. That'
 Attaching this policy in the GSQ account allows users in the GSQ Admin Role to copy objects from the *source* bucket to the *destination* bucket.  
 
 1. Sign in to *destination* GSQ AWS account and change Role to the GSQ Admin Role.  
-2. Create the following policy in the IAM Concolse (see [how-to](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html)).  
+2. Create the following policy in the IAM Console (see [how-to](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html)).  
 3. Change the value of the **SOURCE_BUCKET_NAME** and **DESTINATION_BUCKET_NAME**.
 4. Name the policy **Temp_S3_Sync_ddmmyyyy**.
 5. Enter in the description **Delete this policy on ddmmyyyy** where the date is today + 5 business days.
