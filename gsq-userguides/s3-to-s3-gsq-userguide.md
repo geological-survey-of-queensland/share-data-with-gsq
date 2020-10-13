@@ -38,7 +38,8 @@ By default, an S3 object is owned by the account that uploaded the object. That'
             },
             "Action": [
                 "s3:ListBucket",
-                "s3:GetObject"
+                "s3:GetObject",
+                "s3:GetObjectTagging"
             ],
             "Resource": [
                 "arn:aws:s3:::SOURCE_BUCKET_NAME/*",
@@ -68,8 +69,7 @@ Attaching this policy in the GSQ account allows users in the GSQ Admin Role to c
             "Effect": "Allow",
             "Action": [
                 "s3:ListBucket",
-                "s3:GetObject",
-                "s3:GetObjectTagging"
+                "s3:GetObject"
             ],
             "Resource": [
                 "arn:aws:s3:::SOURCE_BUCKET_NAME",
