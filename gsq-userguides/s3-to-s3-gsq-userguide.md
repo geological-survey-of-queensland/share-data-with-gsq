@@ -58,6 +58,7 @@ Attaching this policy in the GSQ account allows users in the GSQ Admin Role to c
 3. Change the value of the **SOURCE_BUCKET_NAME** and **DESTINATION_BUCKET_NAME**.
 4. Name the policy **Temp_S3_Sync_ddmmyyyy**.
 5. Enter in the description **Delete this policy on ddmmyyyy** where the date is today + 5 business days.
+6. Attach this policy to the GSQ Admin role that you are using with the S3 CLI.
 
 ```json
 {
