@@ -68,7 +68,8 @@ Attaching this policy in the GSQ account allows users in the GSQ Admin Role to c
             "Effect": "Allow",
             "Action": [
                 "s3:ListBucket",
-                "s3:GetObject"
+                "s3:GetObject",
+                "s3:GetObjectTagging"
             ],
             "Resource": [
                 "arn:aws:s3:::SOURCE_BUCKET_NAME",
