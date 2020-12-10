@@ -17,12 +17,12 @@ Please note that there is a minimum $300 fee for this service.
 Send an email to GSQOpenData@dnrme.qld.gov.au to request a Snowball data transfer 
 Please include the following information:
 
- a. The contact details of your contact person. 
- b. What the data is (e.g. airborne survey flown for company, data relating to a lodged survey, etc.). 
- c. What the data relates to (e.g. Permit EPM12345, Company Report CR6789 or Survey PID XXXX).
- d. The approximate total amount of data to be transferred, in Gb/Tb.
- e. Your Purchase Order details to cover the cost (for pricing details, see https://aws.amazon.com/snowball/pricing/ ).
- f. The physical address for delivery of the Snowball device.
+ * The contact details of your contact person. 
+ * What the data is (e.g. airborne survey flown for company, data relating to a lodged survey, etc.). 
+ * What the data relates to (e.g. Permit EPM12345, Company Report CR6789 or Survey PID XXXX).
+ * The approximate total amount of data to be transferred, in Gb/Tb.
+ * Your Purchase Order details to cover the cost (for pricing details, see https://aws.amazon.com/snowball/pricing/ ).
+ * The physical address for delivery of the Snowball device.
 
 Please ensure that data related to each Report/Survey/Permit/Dataset is in separate, clearly-named folders prior to transfer.
 
