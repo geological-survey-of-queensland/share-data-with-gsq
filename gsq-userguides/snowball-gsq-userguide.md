@@ -1,4 +1,4 @@
-# Snowball data tranfers into GSQ's S3 : User Guide
+# Snowball data transfers into GSQ's S3 : User Guide
 
 AWS Snowball is a secure physical device that can transfer data from your data centre or office network to GSQ.
 
@@ -14,7 +14,8 @@ Please note that there is a minimum $300 fee for this service.
 
 ## Step 1: Email GSQ and request a Snowball data transfer
 
-Send an email to GSQOpenData@dnrme.qld.gov.au to request a Snowball data transfer 
+Send an email to GSQOpenData@dnrme.qld.gov.au to request a Snowball data transfer.
+
 Please include the following information:
 
  * The contact details of your contact person. 
