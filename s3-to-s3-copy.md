@@ -17,9 +17,7 @@ You can share files in your AWS S3 buckets directly into GSQ's AWS S3 buckets th
 
 ## Step 2: Attach a policy to your *source* S3 bucket
 
-Attaching this policy to the *source* S3 bucket allows the GSQ *destination* account to perform the ListBucket and GetObject commands on the *source* S3 bucket.  
-
-By default, an S3 object is owned by the account that uploaded the object. That's why granting the destination account the permissions to perform the cross-account copy makes sure that the destination owns the copied objects.  
+Attaching this policy to the *source* S3 bucket allows the GSQ *destination* account to perform the ListBucket and GetObject commands on the *source* S3 bucket, and to copy the objects across.  
 
 1. Sign in to your *source* AWS account.  
 2. Attach the S3 bucket policy sent to you by GSQ to the *source* bucket (see [how-to](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html)).  
