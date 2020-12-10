@@ -1,19 +1,19 @@
 # How to share data with GSQ using S3 to S3 sync
 
-You can share files in your AWS S3 buckets into GSQ's AWS S3 buckets through AWS sync. This is good if you have large files, or a lot of files, that you need to share with GSQ.  
+You can share files in your AWS S3 buckets directly into GSQ's AWS S3 buckets through AWS sync. This is good if you have large files, or a lot of files, that you need to share with GSQ.  
 
 ## Step1: Send an email to GSQ with your request
 
 1. Send an email to GSQOpenData@dnrme.qld.gov.au with the following information:  
     a.  The contact details of your contact person. 
     b.  What the data is (e.g. airborne survey flown for company, data relating to a lodged survey, etc.).
-    c. What the data relates to (e.g. Permit EPM12345, Company Report CR6789 or Survey PID XXXX).  
-    d. Your *source* bucket region (e.g. ap-southeast-2).  
-    e. Your *source* bucket name.  
-    f. The name of S3 folder that has the data you want to transfer.  
+    c.  What the data relates to (e.g. Permit EPM12345, Company Report CR6789 or Survey PID XXXX).  
+    d.  Your *source* bucket region (e.g. ap-southeast-2).  
+    e.  Your *source* bucket name.  
+    f.  The PATH and name of S3 folder(s) that contain the data you want to transfer.  
       * We prefer transferring all contents of an S3 folder rather than transferring individual files by filename.  
-      * However, we can transfer individual files if you are unable to create an S3 folder.    
-2. GSQ will then send you a bucket policy to add to your S3 bucket.  
+      * Please ensure that data related to each Report/Survey/Permit/Dataset is in separate, clearly-named folders  
+2. GSQ will then send you a personalised bucket policy to add to your S3 bucket.  
 
 ## Step 2: Attach a policy to your *source* S3 bucket
 
@@ -21,9 +21,9 @@ Attaching this policy to the *source* S3 bucket allows the GSQ *destination* acc
 
 By default, an S3 object is owned by the account that uploaded the object. That's why granting the destination account the permissions to perform the cross-account copy makes sure that the destination owns the copied objects.  
 
-1. Sign in to *source* AWS account.  
+1. Sign in to your *source* AWS account.  
 2. Attach the S3 bucket policy sent to you by GSQ to the *source* bucket (see [how-to](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html)).  
-3. The bucket policy is as per the below code. However, the policy we send to you has the value of **Principal** set to GSQ's ARN and will have your source bucket names listed..
+3. An example of the bucket policy is as per the below code. However, the policy we send to you will have the value of **Principal** set to GSQ's ARN and will be customised to have your source bucket name listed.
 
 ```json
 {
@@ -47,6 +47,11 @@ By default, an S3 object is owned by the account that uploaded the object. That'
     ]
 }
 ```
+
+## Step 3: GSQ will copy your files directly into our S3 bucket
+
+You will be notified by email once this has been completed successfully.
+
 
 ## Important
 
