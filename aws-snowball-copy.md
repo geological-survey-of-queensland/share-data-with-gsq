@@ -4,7 +4,7 @@ AWS Snowball is a secure physical device that can transfer data from your data c
 
 ![AWS Snowball Process](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/master/aws-snowball-process.png)
 
-General instructions for using a Snowball device are [here](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/master/gsq-userguides/snowball-gsq-userguide.md).
+General instructions for transferring data using a Snowball are [here](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/master/gsq-userguides/snowball-gsq-userguide.md).
 
 Contact us at GSQOpenData@dnrme.qld.gov.au and we will help you transfer data to us using a Snowball device.
 
