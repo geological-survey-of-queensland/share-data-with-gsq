@@ -4,7 +4,7 @@ You can share large files, or a lot of files, with GSQ through the following met
 
 * [S3 to S3 data transfer](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/master/s3-to-s3-copy.md) - securely transfer files between your AWS account and GSQ's AWS account.
 * [Azure Storage to S3 data transfer](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/master/azure-storage-to-s3.md) - securely transfer files between your Azure account and GSQ's AWS account.
-* [AWS Snowball data transfer](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/master/aws-snowball-copy.md) - securely transfer files between your data centre or local network and GSQ's AWS storage using a physical device.
+* [AWS Snowball data transfer](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/master/gsq-userguides/snowball-gsq-userguide.md) - securely transfer files between your data centre or local network and GSQ's AWS storage using a physical device.
 
 For all other data transfer options, please contact us at GSQOpenData@dnrme.qld.gov.au
 
