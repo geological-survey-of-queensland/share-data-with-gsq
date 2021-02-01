@@ -34,7 +34,7 @@ By default, an S3 object is owned by the account that uploaded the object. That'
             "Sid": "DelegateS3Access",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::GSQ_ARN_ACCOUNT_NUMBER:XA-DataAdmin"
+                "AWS":"arn:aws:iam::GSQ_ARN_ACCOUNT_NUMBER:role/XA-DataAdmin"
             },
             "Action": [
                 "s3:ListBucket",
