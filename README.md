@@ -1,4 +1,4 @@
-# How to share data with GSQ
+# How to share data with GSQ 1
 
 You can share large files, or a lot of files, with GSQ through the following methods:
 
