@@ -1,6 +1,8 @@
 # How to export data from GSQ using S3 to S3 sync
 
-You can share files in your AWS S3 buckets directly into GSQ's AWS S3 buckets through AWS sync. This is good if you have large files, or a lot of files, that you need to share with GSQ.  
+You can request to transfer one or more files directly to your own S3 instance rather than downloading them in the [Geoscience Open Data Portal](https://geoscience.data.qld.gov.au/). This is good if you want to export very large files, or a lot of files, from the GSQ system.  
+Once a request to extract files has been submitted you will be contacted by the support team to facilitate this request.
+
 
 ## Step1: Send an email to GSQ with your request
 
