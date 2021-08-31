@@ -11,9 +11,9 @@ Once a request to extract files has been submitted you will be contacted by the 
 ## Step1: Send an email to GSQ with your request
 
 1. Send an email to GSQOpenData@resources.qld.gov.au with the following information:  
-    a.  You contact details (or details of the represntative we should contact at your organisation)
-    b.  What data you want to transfer
-    c.  Your AWS ARN number (click [here](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/Update/model/get-acct-num.png) for reference on this)
+    a.  You contact details (or details of the represntative we should contact at your organisation).  
+    b.  What data you want to transfer.  
+    c.  Your AWS ARN number (click [here](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/Update/model/get-acct-num.png) for reference on this).  
     d.  Your *destination* bucket region (e.g. ap-southeast-2).  
     e.  Your *destination* bucket name.  
 
