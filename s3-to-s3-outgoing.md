@@ -1,24 +1,22 @@
 # How to export data from GSQ using S3 to S3 sync
 
-You can request to transfer one or more files directly to your own S3 instance rather than downloading them in the [Geoscience Open Data Portal](https://geoscience.data.qld.gov.au/).  This is good if you want to export very large files, or a lot of files, from the GSQ system directly into your S3 environment.  
+You can request to transfer one or more files directly to your own S3 instance rather than downloading them in the [Geoscience Open Data Portal](https://geoscience.data.qld.gov.au/).  This is good if you want to export very large files, or a lot of files, from the GSQ system directly into your S3 environment. If you wish to download files to a local machine it is often easier to just download directly rather than completing an S3 to S3 transfer.  
 To logde a request within the Open Data Portal add the files you wish to request to your cart and then click the 'request delivery via S3' button
 
 ![S3 Button](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/Update/model/S3%20Button.jpg)
 
-Once a request to extract files has been submitted you will be contacted by the support team to facilitate this request.
+Once a request to extract files has been submitted you will be contacted by the support team to facilitate this request.  You can also contact the GSQ via [email](mailto:gsqopendata@resources.qld.gov.au) to request an S3-S3 transfer.
 
 
 ## Step1: Send an email to GSQ with your request
 
 1. Send an email to GSQOpenData@resources.qld.gov.au with the following information:  
-    a.  The contact details of your contact person. 
-    b.  What the data is (e.g. airborne survey flown for company, data relating to a lodged survey, etc.).
-    c.  What the data relates to (e.g. Permit EPM12345, Company Report CR6789 or Survey PID XXXX).  
-    d.  Your *source* bucket region (e.g. ap-southeast-2).  
-    e.  Your *source* bucket name.  
-    f.  The PATH and name of S3 folder(s) that contain the data you want to transfer.  
-      * We prefer transferring all contents of an S3 folder rather than transferring individual files by filename.  
-      * Please ensure that data related to each Report/Survey/Permit/Dataset is in separate, clearly-named folders  
+    a.  You contact details (or details of the represntative we should contact at your organisation)
+    b.  What data you want to transfer
+    c.  Your AWS ARN number (click [here](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/Update/model/get-acct-num.png) for reference on this)
+    d.  Your *destination* bucket region (e.g. ap-southeast-2).  
+    e.  Your *destination* bucket name.  
+
 2. GSQ will then send you a personalised bucket policy to add to your S3 bucket.  
 
 ## Step 2: Attach a policy to your *source* S3 bucket
