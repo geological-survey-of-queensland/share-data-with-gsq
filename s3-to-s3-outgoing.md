@@ -1,4 +1,4 @@
-# How to export data from GSQ using S3 to S3 sync
+# How to import data from GSQ using S3 to S3 sync
 
 You can request to transfer one or more files directly to your own S3 instance rather than downloading them in the [Geoscience Open Data Portal](https://geoscience.data.qld.gov.au/).  This is good if you want to export very large files, or a lot of files, from the GSQ system directly into your S3 environment. If you wish to download files to a local machine it is often easier to just download directly rather than completing an S3 to S3 transfer.  
 To lodge a request within the Open Data Portal add the files you wish to request to your cart and then click the 'request delivery via S3' button
