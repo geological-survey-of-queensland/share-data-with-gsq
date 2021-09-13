@@ -23,9 +23,9 @@ Once a request to extract files has been submitted you will be contacted by the 
 
 Attaching this policy to the *destination* S3 bucket allows the GSQ *source* account to perform the ListBucket and GetObject commands on the *source* S3 bucket, and to copy the objects across.  
 
-1. Sign in to your *source* AWS account.  
-2. Attach the S3 bucket policy sent to you by GSQ to the *source* bucket (see [how-to](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html)).  
-3. An example of the bucket policy is as per the below code. However, the policy we send to you will have the value of **Principal** set to GSQ's ARN and will be customised to have your source bucket name listed.
+1. Sign in to your *destination* AWS account.  
+2. Attach the S3 bucket policy sent to you by GSQ to the *destination* bucket (see [how-to](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html)).  
+3. An example of the bucket policy is as per the below code. However, the policy we send to you will have the value of **Principal** set to GSQ's ARN and will be customised to have your destination bucket name listed.
 
 ```json
 {
