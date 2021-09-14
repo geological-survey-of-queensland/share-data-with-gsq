@@ -3,7 +3,7 @@
 You can request to transfer one or more files directly to your own S3 instance rather than downloading them in the [Geoscience Open Data Portal](https://geoscience.data.qld.gov.au/).  This is good if you want to export very large files, or a lot of files, from the GSQ system directly into your S3 environment. If you wish to download files to a local machine it is often easier to just download directly rather than completing an S3 to S3 transfer.  
 To lodge a request within the Open Data Portal add the files you wish to request to your cart and then click the 'request delivery via S3' button
 
-![S3 Button](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/Update/model/S3%20Button.jpg)
+![S3 Button](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/master/model/S3%20Button.jpg)
 
 Once a request to extract files has been submitted you will be contacted by the support team to facilitate this request.  You can also contact the GSQ via [email](mailto:gsqopendata@resources.qld.gov.au) to request an S3-S3 transfer.
 
@@ -13,7 +13,7 @@ Once a request to extract files has been submitted you will be contacted by the 
 1. Send an email to GSQOpenData@resources.qld.gov.au with the following information:  
     a.  Your contact details (or details of the represntative we should contact at your organisation).  
     b.  What data you want to transfer.  
-    c.  Your AWS ARN number (click [here](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/Update/model/get-acct-num.png) for reference on this).  
+    c.  Your AWS ARN number (click [here](https://github.com/geological-survey-of-queensland/share-data-with-gsq/blob/master/model/get-acct-num.png) for reference on this).  
     d.  Your *destination* bucket region (e.g. ap-southeast-2).  
     e.  Your *destination* bucket name.  
 
